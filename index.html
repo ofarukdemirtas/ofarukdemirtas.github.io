@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ömer Faruk Demirtaş - Gömülü Yazılım Mühendisi Portföyü">
-    <title>Ömer Faruk Demirtaş | Portfolio & CV</title>
+    <meta name="description" content="Ömer Faruk Demirtaş - Embedded Software Engineer Portfolio. Specialized in STM32, ROS2, Robotics, and Embedded Systems Development.">
+    <meta name="keywords" content="Embedded Systems, STM32, ROS2, Robotics, C/C++, Python, PCB Design, Embedded Software Engineer">
+    <meta name="author" content="Ömer Faruk Demirtaş">
+    <meta property="og:title" content="Ömer Faruk Demirtaş | Embedded Software Engineer">
+    <meta property="og:description" content="Portfolio of Ömer Faruk Demirtaş - Embedded Software Engineer specializing in robotics, embedded systems, and medical device development.">
+    <meta property="og:type" content="website">
+    <title>Ömer Faruk Demirtaş | Embedded Software Engineer Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="images/ofd logo.jpg">
+    <link rel="shortcut icon" type="image/jpeg" href="images/ofd logo.jpg">
+    <link rel="apple-touch-icon" href="images/ofd logo.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-</head>
 </head>
 <body>
     <div class="bg-grid"></div>
@@ -32,11 +39,11 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-content">
-                <img src="images/omer-faruk.png" alt="Profile" class="profile-img">
+                <img src="images/omer-faruk.png" alt="Ömer Faruk Demirtaş - Profile" class="profile-img" loading="eager">
                 <h1>Ömer Faruk Demirtaş</h1>
                 <p class="subtitle">Embedded Software Engineer</p>
                 <p class="subtitle" style="font-size: 1rem; color: var(--text-gray);">
-                    &lt; Designing future technologies with code &gt;
+                    MY JOURNEY: DEBUGGED, COMPILED, AND STILL RUNNING…
                 </p>
                 
                 <div class="tech-stack">
@@ -159,8 +166,19 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-water"></i>
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <img src="images/pipeline-damage-1.png" alt="Pipeline UGV - Inside Pipe" class="carousel-image active" loading="lazy">
+                            <img src="images/pipeline-damage-2.png" alt="Pipeline UGV - Crack Detection" class="carousel-image" loading="lazy">
+                            <img src="images/pipeline-damage-3.png" alt="Pipeline UGV - Robot View" class="carousel-image" loading="lazy">
+                        </div>
+                        <button class="carousel-btn prev" onclick="changeCarousel(-1, this)">❮</button>
+                        <button class="carousel-btn next" onclick="changeCarousel(1, this)">❯</button>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentCarousel(0, this)"></span>
+                            <span class="dot" onclick="currentCarousel(1, this)"></span>
+                            <span class="dot" onclick="currentCarousel(2, this)"></span>
+                        </div>
                     </div>
                     <div class="project-content">
                         <h3>Pipeline Damage Detection UGV</h3>
@@ -171,15 +189,15 @@
                             <span>Python</span>
                             <span>Robotics</span>
                         </div>
-                        <a href="#" class="project-link">View Project →</a>
+                        <a href="https://github.com/ofarukdemirtas" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="carousel-container">
                         <div class="carousel">
-                            <img src="images/robot-dog-1.jpg" alt="Robot Dog - Assembly" class="carousel-image active">
-                            <img src="images/robot-dog-2.jpg" alt="Robot Dog - Walking" class="carousel-image">
+                            <img src="images/robot-dog-1.jpg" alt="Robot Dog - Assembly" class="carousel-image active" loading="lazy">
+                            <img src="images/robot-dog-2.jpg" alt="Robot Dog - Walking" class="carousel-image" loading="lazy">
                         </div>
                         <button class="carousel-btn prev" onclick="changeCarousel(-1, this)">❮</button>
                         <button class="carousel-btn next" onclick="changeCarousel(1, this)">❯</button>
@@ -197,13 +215,13 @@
                             <span>Kinematics</span>
                             <span>Fusion360</span>
                         </div>
-                        <a href="#" class="project-link">View Project →</a>
+                        <a href="https://github.com/ofarukdemirtas" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/disaster-response-vehicle.jpg" alt="Disaster Response Vehicle" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/disaster-response-vehicle.jpg" alt="Disaster Response Vehicle" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
                     </div>
                     <div class="project-content">
                         <h3>Disaster Response Vehicle</h3>
@@ -213,13 +231,13 @@
                             <span>IoT</span>
                             <span>Prototyping</span>
                         </div>
-                        <a href="#" class="project-link">View Project →</a>
+                        <a href="https://www.youtube.com/watch?v=VY_vNLqdqTI" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/tea-quality.png" alt="Tea Quality Assessment Device" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/tea-quality.png" alt="Tea Quality Assessment Device" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
                     </div>
                     <div class="project-content">
                         <h3>Tea Quality Assessment Device</h3>
@@ -229,13 +247,13 @@
                             <span>Sensors</span>
                             <span>Electronics Design</span>
                         </div>
-                        <a href="#" class="project-link">View Project →</a>
+                        <a href="https://github.com/ofarukdemirtas" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-robot"></i>
+                        <img src="images/jetbot.png" alt="JetBot" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
                     </div>
                     <div class="project-content">
                         <h3>JetBot</h3>
@@ -246,13 +264,13 @@
                             <span>Deep Learning</span>
                             <span>Computer Vision</span>
                         </div>
-                        <a href="#" class="project-link">View Project →</a>
+                        <a href="https://www.youtube.com/watch?v=rRuS2xSkRGo" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/weather-station.png" alt="Weather Station" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/weather-station.png" alt="Weather Station" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
                     </div>
                     <div class="project-content">
                         <h3>Weather Station</h3>
@@ -263,7 +281,7 @@
                             <span>Web Dashboard</span>
                             <span>Data Logging</span>
                         </div>
-                        <a href="#" class="project-link">View Project →</a>
+                        <a href="https://www.youtube.com/shorts/QeGOAQqZuFA" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
 
@@ -359,7 +377,7 @@
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <a href="#">Samsun, Türkiye</a>
+                        <span>Samsun, Türkiye</span>
                     </div>
                 </div>
 
@@ -383,7 +401,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Ömer Faruk Demirtaş. All rights reserved. | Designed with <span style="color: var(--primary); text-shadow: 0 0 10px var(--primary);">❤</span> and JavaScript</p>
+        <p>&copy; 2025 Ömer Faruk Demirtaş. All rights reserved. | Designed with <span style="color: var(--primary); text-shadow: 0 0 10px var(--primary);">❤</span> and JavaScript</p>
     </footer>
 
     <script src="script.js"></script>

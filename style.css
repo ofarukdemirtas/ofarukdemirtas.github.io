@@ -557,11 +557,22 @@ section {
     font-weight: bold;
     transition: all 0.3s;
     display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.2), rgba(255, 0, 110, 0.2));
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    margin-top: 1rem;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
 
 .project-link:hover {
-    color: var(--accent);
-    text-shadow: 0 0 10px var(--accent);
+    color: var(--dark);
+    background: var(--primary);
+    box-shadow: 0 0 30px var(--primary);
+    transform: translateY(-3px);
+    text-shadow: none;
 }
 
 /* Experience Section */
