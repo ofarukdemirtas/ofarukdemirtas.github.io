@@ -174,13 +174,12 @@ function initScrollReveal() {
 // ─── TYPING EFFECT ───
 const subtitles = [
     'Embedded Systems Engineer',
-    'Firmware Developer',
-    'IoT Specialist',
-    'Problem Solver'
+   
 ];
 let subtitleIndex = 0;
 let charIndex = 0;
 const subtitleElement = document.querySelector('.subtitle');
+if (subtitleElement) subtitleElement.textContent = '';
 
 function typeSubtitle() {
     if (!subtitleElement) return;
