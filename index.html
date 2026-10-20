@@ -1,413 +1,563 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ömer Faruk Demirtaş - Embedded Systems Engineer Portfolio. Specialized in STM32, ROS2, Robotics, and Embedded Systems Development.">
-    <meta name="keywords" content="Embedded Systems, STM32, ROS2, Robotics, C/C++, Python, PCB Design, Embedded Systems Engineer">
+    <title>Ömer Faruk Demirtaş | Embedded Systems Engineer</title>
+    <meta name="description" content="Ömer Faruk Demirtaş — Embedded Systems Engineer building firmware, PCBs and real-time control systems with STM32, RTOS, ROS 2 and Altium Designer. From surgical motor drivers to quadruped robots.">
+    <meta name="keywords" content="Embedded Systems Engineer, Firmware, STM32, RTOS, ROS 2, Robotics, C/C++, PCB Design, Altium Designer, CAN bus, Modbus">
     <meta name="author" content="Ömer Faruk Demirtaş">
-    <meta property="og:title" content="Ömer Faruk Demirtaş | Embedded Systems Engineer">
-    <meta property="og:description" content="Portfolio of Ömer Faruk Demirtaş - Embedded Systems Engineer specializing in robotics, embedded systems, and medical device development.">
+    <meta name="theme-color" content="#06090e">
+    <link rel="canonical" href="https://ofarukdemirtas.github.io/">
+
     <meta property="og:type" content="website">
-    <title>Ömer Faruk Demirtaş | Embedded Systems Engineer Portfolio</title>
-    <link rel="icon" type="image/jpeg" href="images/ofd logo.jpg">
-    <link rel="shortcut icon" type="image/jpeg" href="images/ofd logo.jpg">
-    <link rel="apple-touch-icon" href="images/ofd logo.jpg">
+    <meta property="og:url" content="https://ofarukdemirtas.github.io/">
+    <meta property="og:title" content="Ömer Faruk Demirtaş | Embedded Systems Engineer">
+    <meta property="og:description" content="Firmware, PCB design and robotics — from surgical motor drivers to quadruped robots.">
+    <meta property="og:image" content="https://ofarukdemirtas.github.io/images/web/og-card.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ömer Faruk Demirtaş | Embedded Systems Engineer">
+    <meta name="twitter:description" content="Firmware, PCB design and robotics — from surgical motor drivers to quadruped robots.">
+    <meta name="twitter:image" content="https://ofarukdemirtas.github.io/images/web/og-card.jpg">
+
+    <link rel="icon" type="image/png" sizes="64x64" href="images/web/logo-64.png">
+    <link rel="apple-touch-icon" href="images/web/logo-192.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;600;700;900&family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" as="image" href="images/web/omer-faruk.webp">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ömer Faruk Demirtaş",
+        "jobTitle": "Embedded Systems Engineer",
+        "url": "https://ofarukdemirtas.github.io/",
+        "image": "https://ofarukdemirtas.github.io/images/web/omer-faruk.webp",
+        "email": "mailto:farukdemirta@proton.me",
+        "address": { "@type": "PostalAddress", "addressLocality": "Samsun", "addressCountry": "TR" },
+        "worksFor": { "@type": "Organization", "name": "Aygün Surgical Instruments" },
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "Karadeniz Technical University" },
+            { "@type": "CollegeOrUniversity", "name": "Polytechnic Institute of Cávado and Ave" }
+        ],
+        "knowsAbout": ["Embedded Systems", "STM32", "RTOS", "ROS 2", "PCB Design", "Altium Designer", "CAN bus", "Modbus", "Robotics"],
+        "sameAs": [
+            "https://www.linkedin.com/in/omrfarukdemirtas",
+            "https://github.com/ofarukdemirtas",
+            "https://www.youtube.com/@farukdemirta"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <div class="bg-grid"></div>
-    <div class="bg-blur"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
 
-    <header>
-        <div class="logo">ÖFD</div>
-        <nav>
-            <a href="#home" class="nav-link active">Home</a>
+    <header class="site-header">
+        <a href="#home" class="brand" aria-label="Ömer Faruk Demirtaş — home">
+            <img src="images/web/logo-64.png" alt="" width="32" height="32">
+            <span>ÖFD</span>
+        </a>
+        <nav class="nav" id="site-nav" aria-label="Primary">
             <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
             <a href="#projects" class="nav-link">Projects</a>
             <a href="#experience" class="nav-link">Experience</a>
             <a href="#education" class="nav-link">Education</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link nav-link--cta">Let's talk</a>
         </nav>
-        <div class="mobile-menu">
-            <i class="fas fa-bars"></i>
-        </div>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+            <span></span><span></span>
+        </button>
     </header>
 
-    <main>
-        <!-- Hero Section -->
+    <main id="main">
+        <!-- ═══════════ HERO ═══════════ -->
         <section id="home" class="hero">
-            <div class="hero-content">
-                <p class="hero-label">// embedded_systems_engineer.init()</p>
-                <h1>Ömer Faruk<br><span class="highlight">Demirtaş</span></h1>
-                <p class="subtitle">Embedded Systems Engineer</p>
-                <p class="hero-tagline">MY JOURNEY: DEBUGGED, COMPILED, AND STILL RUNNING…</p>
-
-                <div class="tech-stack">
-                    <span class="tech-badge">C/C++</span>
-                    <span class="tech-badge">STM32</span>
-                    <span class="tech-badge">RTOS</span>
-                    <span class="tech-badge">ROS2</span>
-                    <span class="tech-badge">Python</span>
-                    <span class="tech-badge">Altium Designer</span>
+            <canvas class="pcb-canvas" aria-hidden="true"></canvas>
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <p class="status-pill">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span>R&amp;D @ Aygün Surgical<span class="hide-sm"> &nbsp;·&nbsp; M.Sc. @ Ondokuz Mayıs Univ.</span></span>
+                    </p>
+                    <p class="hero-label">// embedded_systems_engineer.init()</p>
+                    <h1 class="hero-title">Ömer Faruk <span class="accent">Demirtaş</span></h1>
+                    <p class="hero-role">
+                        <span class="typed" data-words='["Embedded Systems Engineer","Firmware Developer","PCB Designer","Robotics Engineer"]'>Embedded Systems Engineer</span><span class="caret" aria-hidden="true"></span>
+                    </p>
+                    <p class="hero-lead">
+                        I design firmware, PCBs and real-time control systems that bring hardware to life —
+                        from <strong>surgical motor drivers</strong> to <strong>quadruped robots</strong>.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">View my work <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane" aria-hidden="true"></i> Get in touch</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://www.linkedin.com/in/omrfarukdemirtas" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/ofarukdemirtas" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.youtube.com/@farukdemirta" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <span class="hero-social-line" aria-hidden="true"></span>
+                        <span class="hero-location"><i class="fas fa-location-dot" aria-hidden="true"></i> Samsun, Türkiye</span>
+                    </div>
                 </div>
 
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-filled">View My Work</a>
-                    <a href="#contact" class="btn">Get In Touch</a>
+                <div class="hero-visual">
+                    <figure class="portrait">
+                        <img src="images/web/omer-faruk.webp" alt="Ömer Faruk Demirtaş speaking at an IEEE career event" width="720" height="900" fetchpriority="high">
+                        <span class="corner corner--tl" aria-hidden="true"></span>
+                        <span class="corner corner--tr" aria-hidden="true"></span>
+                        <span class="corner corner--bl" aria-hidden="true"></span>
+                        <span class="corner corner--br" aria-hidden="true"></span>
+                    </figure>
+                    <div class="terminal" aria-hidden="true">
+                        <div class="terminal-bar">
+                            <span></span><span></span><span></span>
+                            <em>ofd@stm32: ~</em>
+                        </div>
+                        <pre class="terminal-body"></pre>
+                    </div>
                 </div>
             </div>
-            <div class="hero-img-wrapper">
-                <img src="images/omer-faruk.png" alt="Ömer Faruk Demirtaş - Profile" class="profile-img" loading="eager">
-                <div class="hero-img-decoration"></div>
+            <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+                <span>scroll</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </a>
+        </section>
+
+        <!-- ═══════════ TECH MARQUEE ═══════════ -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>C / C++</span><span>STM32</span><span>ARM Cortex-M</span><span>PIC</span><span>RTOS</span>
+                <span>CAN bus</span><span>Modbus</span><span>PID Control</span><span>Altium Designer</span>
+                <span>ROS 2 Humble</span><span>Embedded Linux</span><span>Python</span><span>OpenCV</span>
+                <span>Jetson Nano</span><span>Raspberry Pi</span><span>MATLAB</span><span>Fusion 360</span><span>Git</span>
+            </div>
+        </div>
+
+        <!-- ═══════════ STATS ═══════════ -->
+        <section class="stats" aria-label="Highlights">
+            <div class="stat reveal">
+                <span class="stat-value"><span class="count" data-to="3">3</span></span>
+                <span class="stat-label">Engineering roles in R&amp;D &amp; robotics</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-value"><span class="count" data-to="6">6</span>+</span>
+                <span class="stat-label">Hands-on hardware projects</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-value"><span class="count" data-to="2">2</span></span>
+                <span class="stat-label">Countries worked &amp; studied in (TR · PT)</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-value">Top <span class="count" data-to="10">10</span></span>
+                <span class="stat-label">Akbank DisasterTech Hackathon finalist</span>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-container">
-                <div class="about-text">
-                    I graduated with Honors (3.34/4.00) in Electrical and Electronics Engineering (100% English) from Karadeniz Technical University and am currently pursuing my Master's degree at Ondokuz Mayıs University while working as a Junior R&D Specialist at Aygün Surgical Instruments. I am passionate about embedded systems, real-time control, and embedded Linux, with hands-on experience spanning from robotics and autonomous systems to medical device development. Through my Erasmus+ internship in Portugal and participation in various TUBITAK projects, I have developed expertise in international and collaborative environments. My goal is to create impactful technologies by bridging the gap between hardware and software, combining technical excellence with innovation.
+        <!-- ═══════════ ABOUT ═══════════ -->
+        <section id="about" class="section">
+            <div class="section-head reveal">
+                <span class="section-tag">01 — About</span>
+                <h2 class="section-title">Where hardware meets software.</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm an Electrical &amp; Electronics Engineer — graduated <strong>with Honors (3.34/4.00)</strong> from
+                        Karadeniz Technical University's 100% English programme — currently working as a
+                        <strong>Junior R&amp;D Specialist at Aygün Surgical Instruments</strong>, where I develop embedded
+                        systems for surgical motors and medical devices. In parallel, I'm pursuing my M.Sc. at Ondokuz Mayıs University.
+                    </p>
+                    <p>
+                        My focus is <strong>embedded firmware, real-time control and embedded Linux</strong>. I've integrated
+                        LiDAR, stereo vision and 5G on an autonomous ground vehicle during my Erasmus+ internship in Portugal,
+                        built STM32 motor control over CAN bus and Modbus as a TÜBİTAK researcher, and developed robots
+                        ranging from pipe-inspection vehicles to a ROS 2 quadruped.
+                    </p>
+                    <p>
+                        My goal is to create impactful technology by bridging the gap between hardware and software —
+                        combining technical rigor with a bias for building things that actually work.
+                    </p>
                 </div>
-
-                <h3 style="color: var(--primary); margin-top: 3rem; margin-bottom: 2rem; font-size: 1.5rem;">
-                    <i class="fas fa-code"></i> Skills & Expertise
-                </h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>Embedded Systems</h3>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>C / C++</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="--progress: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>STM32 & ARM Cortex</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="--progress: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>RTOS</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="--progress: 85%"></div>
-                            </div>
-                        </div>
+                <aside class="facts-card reveal" aria-label="Quick facts">
+                    <div class="facts-head">
+                        <span class="led" aria-hidden="true"></span>
+                        <span>profile.json</span>
                     </div>
-
-                    <div class="skill-card">
-                        <h3>Software Development</h3>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Python</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="--progress: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>ROS 2 Humble</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="--progress: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>MATLAB</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="--progress: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Tools & Design</h3>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Altium Designer (PCB)</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="--progress: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Git / GitHub</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="--progress: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Fusion 360</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="--progress: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <dl class="facts">
+                        <div><dt>role</dt><dd>Junior R&amp;D Specialist</dd></div>
+                        <div><dt>company</dt><dd>Aygün Surgical / Hermann Müller Medizintechnik</dd></div>
+                        <div><dt>studying</dt><dd>M.Sc. EEE · Ondokuz Mayıs Univ.</dd></div>
+                        <div><dt>degree</dt><dd>B.Sc. EEE · KTU · Honors</dd></div>
+                        <div><dt>focus</dt><dd>Firmware · Real-time control · Embedded Linux</dd></div>
+                        <div><dt>based_in</dt><dd>Samsun, Türkiye</dd></div>
+                    </dl>
+                </aside>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2 class="section-title">Featured Projects</h2>
+        <!-- ═══════════ SKILLS ═══════════ -->
+        <section id="skills" class="section">
+            <div class="section-head reveal">
+                <span class="section-tag">02 — Skills</span>
+                <h2 class="section-title">The toolbox.</h2>
+                <p class="section-lead">From schematic to firmware to a robot that moves — the stack I work across.</p>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-card tilt reveal">
+                    <div class="skill-icon"><i class="fas fa-microchip" aria-hidden="true"></i></div>
+                    <h3>Firmware &amp; MCUs</h3>
+                    <p>Bare-metal and RTOS firmware for real-time control.</p>
+                    <ul class="chips">
+                        <li>C</li><li>C++</li><li>STM32</li><li>ARM Cortex-M</li><li>PIC</li><li>RTOS</li><li>PID control</li>
+                    </ul>
+                </article>
+                <article class="skill-card tilt reveal">
+                    <div class="skill-icon"><i class="fas fa-bolt" aria-hidden="true"></i></div>
+                    <h3>Hardware &amp; PCB</h3>
+                    <p>Prototype circuits, layouts and mechanical integration.</p>
+                    <ul class="chips">
+                        <li>Altium Designer</li><li>Schematic design</li><li>PCB layout</li><li>ADC / sensors</li><li>Prototyping</li><li>Fusion 360</li>
+                    </ul>
+                </article>
+                <article class="skill-card tilt reveal">
+                    <div class="skill-icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+                    <h3>Robotics &amp; Vision</h3>
+                    <p>Autonomous platforms, kinematics and perception.</p>
+                    <ul class="chips">
+                        <li>ROS 2 Humble</li><li>Inverse kinematics</li><li>LiDAR</li><li>Stereo camera</li><li>OpenCV</li><li>Jetson Nano</li><li>Raspberry Pi</li>
+                    </ul>
+                </article>
+                <article class="skill-card tilt reveal">
+                    <div class="skill-icon"><i class="fas fa-network-wired" aria-hidden="true"></i></div>
+                    <h3>Protocols &amp; Tools</h3>
+                    <p>Talking to the rest of the system — and shipping it.</p>
+                    <ul class="chips">
+                        <li>CAN bus</li><li>Modbus</li><li>GPS / 5G modules</li><li>Embedded Linux</li><li>Python</li><li>MATLAB</li><li>Git</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- ═══════════ PROJECTS ═══════════ -->
+        <section id="projects" class="section">
+            <div class="section-head reveal">
+                <span class="section-tag">03 — Projects</span>
+                <h2 class="section-title">Things I've built.</h2>
+                <p class="section-lead">Robots, devices and systems — designed, wired, coded and tested.</p>
+            </div>
+
+            <div class="filters reveal" role="toolbar" aria-label="Filter projects">
+                <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="filter" data-filter="robotics" aria-pressed="false">Robotics</button>
+                <button type="button" class="filter" data-filter="embedded" aria-pressed="false">Embedded</button>
+                <button type="button" class="filter" data-filter="iot" aria-pressed="false">IoT</button>
+                <button type="button" class="filter" data-filter="vision" aria-pressed="false">AI &amp; Vision</button>
+            </div>
+
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="carousel-container">
-                        <div class="carousel">
-                            <img src="images/pipeline-damage-1.png" alt="Pipeline UGV - Inside Pipe" class="carousel-image active" loading="lazy">
-                            <img src="images/pipeline-damage-2.png" alt="Pipeline UGV - Crack Detection" class="carousel-image" loading="lazy">
-                            <img src="images/pipeline-damage-3.png" alt="Pipeline UGV - Robot View" class="carousel-image" loading="lazy">
+                <article class="project-card tilt reveal" data-cat="robotics vision">
+                    <div class="gallery" data-title="Pipeline Damage Detection UGV">
+                        <div class="slide is-active" data-fit="contain" style="--src: url('images/web/pipeline-damage-1.webp')">
+                            <img src="images/web/pipeline-damage-1.webp" alt="Pipeline inspection UGV prototype on the workbench" width="277" height="284" loading="lazy">
                         </div>
-                        <button class="carousel-btn prev" onclick="changeCarousel(-1, this)">❮</button>
-                        <button class="carousel-btn next" onclick="changeCarousel(1, this)">❯</button>
-                        <div class="carousel-dots">
-                            <span class="dot active" onclick="currentCarousel(0, this)"></span>
-                            <span class="dot" onclick="currentCarousel(1, this)"></span>
-                            <span class="dot" onclick="currentCarousel(2, this)"></span>
+                        <div class="slide" data-fit="contain" style="--src: url('images/web/pipeline-damage-2.webp')">
+                            <img src="images/web/pipeline-damage-2.webp" alt="Pipeline inspection UGV with Raspberry Pi and camera" width="364" height="284" loading="lazy">
+                        </div>
+                        <div class="slide" data-fit="contain" style="--src: url('images/web/pipeline-damage-3.webp')">
+                            <img src="images/web/pipeline-damage-3.webp" alt="Live camera feed and remote control web interface" width="486" height="340" loading="lazy">
                         </div>
                     </div>
-                    <div class="project-content">
+                    <div class="project-body">
+                        <p class="project-meta">Robotics · Computer Vision</p>
                         <h3>Pipeline Damage Detection UGV</h3>
-                        <p>An autonomous vehicle developed to detect cracks in underground water and sewage pipes. Real-time video transmission and damage analysis were performed using Raspberry Pi and OpenCV (Sobel edge detection).</p>
-                        <div class="project-tech">
-                            <span>Raspberry Pi</span>
-                            <span>OpenCV</span>
-                            <span>Python</span>
-                            <span>Robotics</span>
+                        <p>Autonomous vehicle that inspects underground water and sewage pipes for cracks, with real-time video streaming and on-board damage analysis using Sobel edge detection.</p>
+                        <ul class="tags"><li>Raspberry Pi</li><li>OpenCV</li><li>Python</li><li>Robotics</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/ofarukdemirtas" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
                         </div>
-                        <a href="https://github.com/ofarukdemirtas" target="_blank" class="project-link">View Project →</a>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="carousel-container">
-                        <div class="carousel">
-                            <img src="images/robot-dog-1.jpg" alt="Robot Dog - Assembly" class="carousel-image active" loading="lazy">
-                            <img src="images/robot-dog-2.jpg" alt="Robot Dog - Walking" class="carousel-image" loading="lazy">
+                <article class="project-card tilt reveal" data-cat="robotics">
+                    <div class="gallery" data-title="Robot Dog">
+                        <div class="slide is-active" data-fit="contain" style="--src: url('images/web/robot-dog-1.webp')">
+                            <img src="images/web/robot-dog-1.webp" alt="Quadruped robot dog during assembly" width="901" height="1200" loading="lazy">
                         </div>
-                        <button class="carousel-btn prev" onclick="changeCarousel(-1, this)">❮</button>
-                        <button class="carousel-btn next" onclick="changeCarousel(1, this)">❯</button>
-                        <div class="carousel-dots">
-                            <span class="dot active" onclick="currentCarousel(0, this)"></span>
-                            <span class="dot" onclick="currentCarousel(1, this)"></span>
+                        <div class="slide" data-fit="contain" style="--src: url('images/web/robot-dog-2.webp')">
+                            <img src="images/web/robot-dog-2.webp" alt="Quadruped robot dog standing in the lab" width="901" height="1200" loading="lazy">
                         </div>
                     </div>
-                    <div class="project-content">
+                    <div class="project-body">
+                        <p class="project-meta">Robotics · ROS 2</p>
                         <h3>Robot Dog</h3>
-                        <p>Quadruped robot developed using ROS 2 Humble. Worked on inverse kinematics calculations and motion planning to improve efficiency and accuracy.</p>
-                        <div class="project-tech">
-                            <span>ROS 2</span>
-                            <span>C++</span>
-                            <span>Kinematics</span>
-                            <span>Fusion360</span>
+                        <p>Quadruped robot built on ROS 2 Humble. Worked on inverse kinematics and motion planning to improve gait efficiency and accuracy.</p>
+                        <ul class="tags"><li>ROS 2</li><li>C++</li><li>Kinematics</li><li>Fusion 360</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/ofarukdemirtas" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
                         </div>
-                        <a href="https://github.com/ofarukdemirtas" target="_blank" class="project-link">View Project →</a>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/disaster-response-vehicle.jpg" alt="Disaster Response Vehicle" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                <article class="project-card tilt reveal" data-cat="robotics iot">
+                    <div class="gallery" data-title="Disaster Response Vehicle">
+                        <div class="slide is-active">
+                            <img src="images/web/disaster-response-vehicle.webp" alt="Disaster response ground vehicle on a beach" width="1400" height="1051" loading="lazy">
+                        </div>
+                        <span class="media-badge"><i class="fas fa-trophy" aria-hidden="true"></i> Top 10 Finalist</span>
                     </div>
-                    <div class="project-content">
+                    <div class="project-body">
+                        <p class="project-meta">Robotics · IoT</p>
                         <h3>Disaster Response Vehicle</h3>
-                        <p>Top 10 finalist project at Akbank DisasterTech Hackathon. Designed an autonomous land vehicle to support search and rescue operations in disaster zones.</p>
-                        <div class="project-tech">
-                            <span>Autonomous Systems</span>
-                            <span>IoT</span>
-                            <span>Prototyping</span>
+                        <p>Autonomous land vehicle designed to support search-and-rescue teams in disaster zones. Top 10 finalist at the Akbank DisasterTech Hackathon.</p>
+                        <ul class="tags"><li>Autonomous Systems</li><li>IoT</li><li>Prototyping</li></ul>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/watch?v=VY_vNLqdqTI" target="_blank" rel="noopener"><i class="fab fa-youtube" aria-hidden="true"></i> Watch demo</a>
                         </div>
-                        <a href="https://www.youtube.com/watch?v=VY_vNLqdqTI" target="_blank" class="project-link">View Project →</a>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/tea-quality.png" alt="Tea Quality Assessment Device" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                <article class="project-card tilt reveal" data-cat="embedded">
+                    <div class="gallery" data-title="Tea Quality Assessment Device">
+                        <div class="slide is-active" data-fit="light">
+                            <img src="images/web/tea-quality.webp" alt="3D render of the handheld tea quality assessment probe" width="1200" height="898" loading="lazy">
+                        </div>
+                        <span class="media-badge"><i class="fas fa-flask" aria-hidden="true"></i> TÜBİTAK 2247-C</span>
                     </div>
-                    <div class="project-content">
+                    <div class="project-body">
+                        <p class="project-meta">Embedded · Sensing</p>
                         <h3>Tea Quality Assessment Device</h3>
-                        <p>Developed a device to electronically analyze tea quality within the scope of the TUBITAK 2247-C program.</p>
-                        <div class="project-tech">
-                            <span>STM32</span>
-                            <span>Sensors</span>
-                            <span>Electronics Design</span>
+                        <p>Handheld device that electronically analyzes tea quality, developed within the TÜBİTAK 2247-C programme.</p>
+                        <ul class="tags"><li>STM32</li><li>Sensors</li><li>Electronics Design</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/ofarukdemirtas" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
                         </div>
-                        <a href="https://github.com/ofarukdemirtas" target="_blank" class="project-link">View Project →</a>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/jetbot.png" alt="JetBot" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                <article class="project-card tilt reveal" data-cat="robotics vision">
+                    <div class="gallery" data-title="JetBot">
+                        <div class="slide is-active">
+                            <img src="images/web/jetbot.webp" alt="JetBot mobile robot built on NVIDIA Jetson Nano" width="1200" height="945" loading="lazy">
+                        </div>
                     </div>
-                    <div class="project-content">
+                    <div class="project-body">
+                        <p class="project-meta">AI · Robotics</p>
                         <h3>JetBot</h3>
-                        <p>An AI-powered mobile robot platform built on NVIDIA Jetson Nano. Implemented autonomous navigation and object detection capabilities using deep learning and computer vision.</p>
-                        <div class="project-tech">
-                            <span>Jetson Nano</span>
-                            <span>Python</span>
-                            <span>Deep Learning</span>
-                            <span>Computer Vision</span>
+                        <p>AI-powered mobile robot on NVIDIA Jetson Nano with autonomous navigation and object detection using deep learning and computer vision.</p>
+                        <ul class="tags"><li>Jetson Nano</li><li>Python</li><li>Deep Learning</li><li>Computer Vision</li></ul>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/watch?v=rRuS2xSkRGo" target="_blank" rel="noopener"><i class="fab fa-youtube" aria-hidden="true"></i> Watch demo</a>
                         </div>
-                        <a href="https://www.youtube.com/watch?v=rRuS2xSkRGo" target="_blank" class="project-link">View Project →</a>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/weather-station.png" alt="Weather Station" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                <article class="project-card tilt reveal" data-cat="iot embedded">
+                    <div class="gallery" data-title="Weather Station">
+                        <div class="slide is-active" data-fit="contain" style="--src: url('images/web/weather-station.webp')">
+                            <img src="images/web/weather-station.webp" alt="3D-printed weather station enclosure with OLED display" width="236" height="363" loading="lazy">
+                        </div>
                     </div>
-                    <div class="project-content">
+                    <div class="project-body">
+                        <p class="project-meta">IoT · Embedded</p>
                         <h3>Weather Station</h3>
-                        <p>A comprehensive IoT weather monitoring system that collects and analyzes environmental data. Features real-time data logging, cloud integration, and a web-based dashboard for remote monitoring.</p>
-                        <div class="project-tech">
-                            <span>IoT</span>
-                            <span>Sensors</span>
-                            <span>Web Dashboard</span>
-                            <span>Data Logging</span>
+                        <p>IoT weather monitoring system that collects and logs environmental data, with cloud integration and a web dashboard for remote monitoring.</p>
+                        <ul class="tags"><li>IoT</li><li>Sensors</li><li>Web Dashboard</li><li>Data Logging</li></ul>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/shorts/QeGOAQqZuFA" target="_blank" rel="noopener"><i class="fab fa-youtube" aria-hidden="true"></i> Watch demo</a>
                         </div>
-                        <a href="https://www.youtube.com/shorts/QeGOAQqZuFA" target="_blank" class="project-link">View Project →</a>
                     </div>
-                </div>
-
-                </div>
+                </article>
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="experience-timeline">
-                <div class="experience-item">
-                    <div class="experience-dot"></div>
-                    <div class="experience-content">
-                        <div class="experience-date">Apr 2025 - Present</div>
-                        <div class="experience-title">Junior R&D Specialist</div>
-                        <div class="experience-company">Aygün Surgical / Hermann Müller Medizintechnik GmbH - Samsun, Türkiye</div>
-                        <div class="experience-desc">
-                            Developing embedded systems for surgical motors and medical devices using STM32 and PIC microcontrollers. Designing prototype circuits and creating PCB layouts using Altium Designer. Writing embedded software for medical applications.
+        <!-- ═══════════ EXPERIENCE ═══════════ -->
+        <section id="experience" class="section">
+            <div class="section-head reveal">
+                <span class="section-tag">04 — Experience</span>
+                <h2 class="section-title">Where I've worked.</h2>
+            </div>
+            <ol class="timeline">
+                <li class="job reveal is-current" data-start="2025-04">
+                    <div class="job-node" aria-hidden="true"><i class="fas fa-stethoscope"></i></div>
+                    <div class="job-card">
+                        <div class="job-top">
+                            <div>
+                                <h3>Junior R&amp;D Specialist</h3>
+                                <p class="job-company">Aygün Surgical / Hermann Müller Medizintechnik GmbH</p>
+                            </div>
+                            <div class="job-when">
+                                <span class="job-date">Apr 2025 — Present</span>
+                                <span class="job-duration"></span>
+                                <span class="job-place"><i class="fas fa-location-dot" aria-hidden="true"></i> Samsun, Türkiye</span>
+                            </div>
                         </div>
+                        <ul class="job-points">
+                            <li>Develop embedded systems for surgical motors and medical devices on STM32 and PIC microcontrollers.</li>
+                            <li>Design prototype circuits and PCB layouts in Altium Designer.</li>
+                            <li>Write embedded software for medical applications.</li>
+                        </ul>
+                        <ul class="tags"><li>STM32</li><li>PIC</li><li>Altium Designer</li><li>Medical devices</li></ul>
                     </div>
+                </li>
+
+                <li class="job reveal" data-start="2024-10" data-end="2024-12">
+                    <div class="job-node" aria-hidden="true"><i class="fas fa-robot"></i></div>
+                    <div class="job-card">
+                        <div class="job-top">
+                            <div>
+                                <h3>Robotics Intern Engineer <span class="job-kind">Erasmus+</span></h3>
+                                <p class="job-company">Bold Robotics</p>
+                            </div>
+                            <div class="job-when">
+                                <span class="job-date">Oct 2024 — Dec 2024</span>
+                                <span class="job-duration"></span>
+                                <span class="job-place"><i class="fas fa-location-dot" aria-hidden="true"></i> Coimbra, Portugal</span>
+                            </div>
+                        </div>
+                        <ul class="job-points">
+                            <li>Integrated a stereo camera, LiDAR, GPS and 5G communication module into an unmanned ground vehicle.</li>
+                            <li>Developed a tablet-based user interface for real-time vehicle control.</li>
+                            <li>Enhanced autonomous navigation and obstacle detection.</li>
+                        </ul>
+                        <ul class="tags"><li>UGV</li><li>LiDAR</li><li>Stereo vision</li><li>5G</li><li>Autonomy</li></ul>
+                    </div>
+                </li>
+
+                <li class="job reveal" data-start="2024-03" data-end="2024-07">
+                    <div class="job-node" aria-hidden="true"><i class="fas fa-microchip"></i></div>
+                    <div class="job-card">
+                        <div class="job-top">
+                            <div>
+                                <h3>Intern Researcher <span class="job-kind">TÜBİTAK STAR</span></h3>
+                                <p class="job-company">İnce Arge Research &amp; Development Ltd.</p>
+                            </div>
+                            <div class="job-when">
+                                <span class="job-date">Mar 2024 — Jul 2024</span>
+                                <span class="job-duration"></span>
+                                <span class="job-place"><i class="fas fa-location-dot" aria-hidden="true"></i> Rize, Türkiye</span>
+                            </div>
+                        </div>
+                        <ul class="job-points">
+                            <li>Developed and implemented a PID controller on STM32.</li>
+                            <li>Co-developed a high-precision servo motor control system over CAN bus and Modbus.</li>
+                            <li>Designed and implemented an ADC multiplexer on STM32.</li>
+                        </ul>
+                        <ul class="tags"><li>STM32</li><li>PID</li><li>CAN bus</li><li>Modbus</li><li>Servo control</li></ul>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- ═══════════ EDUCATION ═══════════ -->
+        <section id="education" class="section">
+            <div class="section-head reveal">
+                <span class="section-tag">05 — Education</span>
+                <h2 class="section-title">Education &amp; milestones.</h2>
+            </div>
+            <div class="edu-layout">
+                <div class="edu-list">
+                    <article class="edu-card tilt reveal">
+                        <span class="edu-years">2025 — Present</span>
+                        <h3>M.Sc. Electrical &amp; Electronics Engineering</h3>
+                        <p class="edu-school">Ondokuz Mayıs University</p>
+                        <p>Advanced studies with a focus on embedded systems and advanced control systems.</p>
+                    </article>
+                    <article class="edu-card tilt reveal">
+                        <span class="edu-years">2019 — 2025</span>
+                        <h3>B.Sc. Electrical &amp; Electronics Engineering <span class="edu-note">100% English</span></h3>
+                        <p class="edu-school">Karadeniz Technical University</p>
+                        <p>Graduated with Honors · GPA 3.34/4.00. Digital systems, microcontrollers and embedded design.</p>
+                    </article>
+                    <article class="edu-card tilt reveal">
+                        <span class="edu-years">2023 — 2024</span>
+                        <h3>Erasmus+ Exchange · Electronics &amp; Computer Engineering</h3>
+                        <p class="edu-school">Polytechnic Institute of Cávado and Ave · Portugal</p>
+                        <p>Practical engineering in modern robotics and embedded systems in an international team.</p>
+                    </article>
                 </div>
 
-                <div class="experience-item">
-                    <div class="experience-dot"></div>
-                    <div class="experience-content">
-                        <div class="experience-date">Oct 2024 - Dec 2024</div>
-                        <div class="experience-title">Robotics Intern Engineer (Erasmus+ Internship)</div>
-                        <div class="experience-company">Bold Robotics - Coimbra, Portugal</div>
-                        <div class="experience-desc">
-                            Integrated stereo camera, LiDAR, GPS module and 5G communication module into unmanned ground vehicle. Developed tablet-based user interface for real-time vehicle control. Enhanced autonomous navigation and obstacle detection.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-dot"></div>
-                    <div class="experience-content">
-                        <div class="experience-date">Mar 2024 - Jul 2024</div>
-                        <div class="experience-title">TUBITAK Intern Researcher - STAR</div>
-                        <div class="experience-company">İnce Arge Research & Development Limited Company - Rize, Türkiye</div>
-                        <div class="experience-desc">
-                            Developed and implemented PID controller using STM32. Collaboratively developed high-precision servo motor control system utilizing CANbus and Modbus protocols. Designed and implemented ADC multiplexer on STM32.
-                        </div>
-                    </div>
-                </div>
+                <aside class="milestones reveal" aria-label="Milestones">
+                    <h3><i class="fas fa-award" aria-hidden="true"></i> Milestones</h3>
+                    <ul>
+                        <li>
+                            <span class="ms-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></span>
+                            <div><strong>Graduated with Honors</strong><span>B.Sc. EEE, KTU · GPA 3.34/4.00</span></div>
+                        </li>
+                        <li>
+                            <span class="ms-icon"><i class="fas fa-trophy" aria-hidden="true"></i></span>
+                            <div><strong>Top 10 Finalist</strong><span>Akbank DisasterTech Hackathon</span></div>
+                        </li>
+                        <li>
+                            <span class="ms-icon"><i class="fas fa-flask" aria-hidden="true"></i></span>
+                            <div><strong>TÜBİTAK STAR Researcher</strong><span>STM32 servo control · 2024</span></div>
+                        </li>
+                        <li>
+                            <span class="ms-icon"><i class="fas fa-leaf" aria-hidden="true"></i></span>
+                            <div><strong>TÜBİTAK 2247-C Project</strong><span>Tea quality assessment device</span></div>
+                        </li>
+                        <li>
+                            <span class="ms-icon"><i class="fas fa-earth-europe" aria-hidden="true"></i></span>
+                            <div><strong>Erasmus+ × 2</strong><span>Study exchange &amp; robotics internship · Portugal</span></div>
+                        </li>
+                    </ul>
+                </aside>
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="education">
-            <h2 class="section-title">Education</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <h3>M.Sc. Electrical & Electronics Eng.</h3>
-                    <div class="school">Electrical & Electronics Engineering</div>
-                    <div class="year">Ondokuz Mayıs University | 2025 - Present</div>
-                    <p>Pursuing advanced studies in electrical and electronics engineering with focus on embedded systems and advanced control systems.</p>
-                </div>
-
-                <div class="education-card">
-                    <h3>B.Sc. Electrical & Electronics Eng. (English)</h3>
-                    <div class="school">Electrical & Electronics Engineering</div>
-                    <div class="year">Karadeniz Technical University | 2019 - 2025</div>
-                    <p>Graduated with Honor | GPA: 3.34/4.00. Comprehensive studies in digital systems, microcontrollers, and embedded design.</p>
-                </div>
-
-                <div class="education-card">
-                    <h3>Erasmus+ (Electronics & Computer Eng.)</h3>
-                    <div class="school">Electronics and Computer Engineering</div>
-                    <div class="year">Polytechnic Institute of Cávado and Ave | 2023 - 2024</div>
-                    <p>International exchange program focusing on practical engineering skills and cross-cultural collaboration in modern robotics and embedded systems.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p style="font-size: 1.1rem; margin-bottom: 2rem;">
-                    I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hello, feel free to reach out!
+        <!-- ═══════════ CONTACT ═══════════ -->
+        <section id="contact" class="section contact">
+            <div class="contact-card reveal">
+                <span class="section-tag">06 — Contact</span>
+                <h2 class="contact-title">Let's build something<br><span class="accent">that ships.</span></h2>
+                <p class="contact-lead">
+                    Working on embedded systems, robotics or medical devices? I'm always happy to talk about
+                    new projects and opportunities.
                 </p>
-
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:farukdemirta@proton.me">farukdemirta@proton.me</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+">+90</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Samsun, Türkiye</span>
-                    </div>
+                <div class="contact-actions">
+                    <a href="mailto:farukdemirta@proton.me" class="btn btn-primary btn-lg"><i class="fas fa-envelope" aria-hidden="true"></i> farukdemirta@proton.me</a>
+                    <button type="button" class="btn btn-ghost btn-lg copy-email" data-email="farukdemirta@proton.me">
+                        <i class="far fa-copy" aria-hidden="true"></i> <span>Copy email</span>
+                    </button>
                 </div>
-
-                <h3 style="color: var(--primary); margin: 2rem 0 1rem;">Connect With Me</h3>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/omrfarukdemirtas" class="social-link" title="LinkedIn" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/ofarukdemirtas" class="social-link" title="GitHub" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@farukdemirta" class="social-link" title="YouTube" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="mailto:farukdemirta@proton.me" class="social-link" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+                <div class="contact-social">
+                    <a href="https://www.linkedin.com/in/omrfarukdemirtas" target="_blank" rel="noopener" class="social-link"><i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a>
+                    <a href="https://github.com/ofarukdemirtas" target="_blank" rel="noopener" class="social-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+                    <a href="https://www.youtube.com/@farukdemirta" target="_blank" rel="noopener" class="social-link"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Ömer Faruk Demirtaş. All rights reserved. | Designed with <span style="color: var(--primary); text-shadow: 0 0 10px var(--primary);">❤</span> and JavaScript</p>
+    <footer class="site-footer">
+        <p>© <span class="year">2026</span> Ömer Faruk Demirtaş</p>
+        <p class="footer-tagline">// debugged, compiled, and still running…</p>
+        <a href="#home" class="to-top" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
     </footer>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+        <button type="button" class="lb-close" aria-label="Close"><i class="fas fa-xmark"></i></button>
+        <button type="button" class="lb-nav lb-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+        <figure class="lb-figure">
+            <img alt="">
+            <figcaption></figcaption>
+        </figure>
+        <button type="button" class="lb-nav lb-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite"></div>
 
     <script src="script.js"></script>
 </body>
